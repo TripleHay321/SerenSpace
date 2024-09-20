@@ -1,0 +1,646 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section.home {
+    background: url(./IMG/Hero\ Section.png);
+    padding: 0% 5% 5% 5%;
+}
+
+nav {
+    background: #d8bacc;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 8%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 3%;
+    padding: 2px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    border-bottom: 4px solid transparent;
+}
+
+nav ul li a:hover {
+    border-bottom-color: #80205a;
+    transition: border-bottom-color 0.3s ease-in-out;
+}
+
+nav div {
+    display: inline-flex;
+    width: 100%;
+}
+
+nav div a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    border-bottom: 4px solid transparent;
+    margin-right: 15%;
+}
+
+nav div a:hover {
+    border-bottom-color: #80205a;
+}
+
+nav div button {
+    background: #80205a;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50px;
+    border: none;
+    padding: 3%;
+    font-size: large;
+}
+
+/* stylingfor home main */
+div.main div.row {
+    display: flex;
+    align-items: center;
+    padding: 3% 0%;
+}
+
+div.main div.row div.col{
+    padding-right: 5%;
+}
+
+div.main div.row div.col p.small {
+    font-size: medium;
+    font-family: sans-serif;
+    font-weight: 500;
+    margin: 5% 0%;
+}
+
+div.main div.row div.col button {
+    background: #80205a;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50px;
+    border: none;
+    padding: 4%;
+    font-size: medium;
+    cursor: pointer;
+}
+
+div.main div.row div.col button:focus {
+    background: #fff;
+    outline: 2px solid #80205a;
+    color: #80205a;
+}
+
+div.main div.row div.col p.big {
+    font-size: 80px;
+    font-weight: bolder;
+}
+
+div.main div.row div.col img {
+    max-height: 528px;
+    width: 603px;
+}
+
+div.main select {
+    background: #fff;
+    color: #000;
+    font-size: medium;
+    border: none;
+    border-radius: 50px 0px 0px 50px;
+    padding: 1.5%;
+}
+
+div.main input[type=search] {
+    background: #fff;
+    color: #000;
+    padding: 1.5%;
+    border: 1px solid transparent;
+    border-left-color: #000;
+    margin-left: -5px;
+    border-radius: 0px 50px 50px 0px;
+    min-width: 250px;
+}
+
+div.main button.search {
+    background: #80205a;
+    color: #fff;
+    padding: 1%;
+    border: 1px solid transparent;
+    margin-left: -100px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+/* styling for about */
+
+section.about {
+    padding: 5%;
+}
+
+section.about h1 {
+    text-align: center;
+    font-size:  55px;
+}
+
+section.about div.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: 5%;
+}
+
+section.about div.row div.col {
+    flex: 1;
+    border: 2px solid #80205a;
+    border-radius: 20px;
+    padding: 3% 2%;
+    margin-right: 5%;
+}
+
+section.about div.row div.col p.big {
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+section.about div.row div.col p.small {
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 7%;
+    text-align: center;
+}
+
+section.about div.row div.col button {
+    background: #fff;
+    border: 2px solid #80205a;
+    padding: 4% 6%;
+    border-radius: 50px;
+    margin-top: 3%;
+    font-size: medium;
+}
+
+section.about div.row div.col button:focus {
+    background: #80205a;
+    color: #fff;
+    transition: 0.3s ease-in;
+}
+
+/* styling for resources */
+
+section.services {
+    background: url(./IMG/Hero\ Section.png);
+    background-size: contain;
+    padding: 5%;
+}
+
+section.services div.how_it {
+    max-width: 35%;
+}
+
+section.services div.how_it h1 {
+    font-size: 43px;
+}
+
+section.services div.how_it p {
+    padding: 4% 2.5%;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: medium;
+}
+
+section.services div.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1% 0%;
+}
+
+section.services div.row div.col {
+    flex: 1;
+}
+
+section.services div.row div.col1 {
+    border-left: 3px solid #a58c9b;
+    padding:  0px 8% 0px 5px;
+    font-family: sans-serif;
+} 
+
+section.services div.row div.col1 div.col-block {
+    margin-bottom: 15%;
+}
+
+section.services div.row div.col1 div.col-block div.show {
+    border-left: 4px solid transparent;
+    padding-left: 5px;
+    margin-left: -7px;
+}
+
+section.services div.row div.col1 div.col-block div.show:hover{
+    border-left-color: #80205a;
+    transition: 0.5s ease-in-out;
+}
+
+section.services div.row div.col1 div.col-block div.show  h3 {
+    font-size: 30px;
+}
+
+section.services div.row div.col1 div.col-block div.show  p.big {
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    padding-bottom: 3%;
+}
+
+section.services div.row div.col1 div.col-block  p.small {
+    font-size: medium;
+}
+
+/* styling for consultants */
+
+section.consultants {
+    padding: 5%;
+}
+
+section.consultants h1 {
+    text-align: center;
+    font-size: 55px;
+}
+
+section.consultants div.row{
+    display: flex;
+    padding: 5% 0%;
+    border-bottom: 3px solid #bdbdbd;
+}
+
+section.consultants div.row div.img {
+    margin-right: 1%;
+}
+
+section.consultants div.row div.img IMG {
+    width: 328px;
+}
+
+section.consultants div.row div.img IMG:hover {
+    width: 320px;
+    transition: 0.5s ease-in-out;
+}
+
+section.consultants div.row2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3% 0%;
+}
+
+section.consultants div.row2 div.col {
+    flex: 1;
+}
+
+section.consultants div.row2 div.middle-line {
+    border-right: 3px solid #888787;
+    padding-right: 5%;
+}
+
+section.consultants div.row2 div.col h3 {
+    font-size: 60px;
+}
+
+section.consultants div.row2 div.col p.one {
+    margin-top: 5%;
+    font-size: x-large;
+    font-family: sans-serif;
+}
+
+section.consultants div.row2 div.col2 {
+    padding-left: 5%;
+}
+
+section.consultants div.row2 div.col div.col-block {
+    margin: 5% 0%;
+}
+
+section.consultants div.row2 div.col div.col-block div.icon-text {
+    display: flex;
+}
+
+section.consultants div.row2 div.col div.col-block div.icon-text p{
+    font-size: xx-large;
+    margin-bottom: 2%;
+    padding-left: 1%;
+    font-family: sans-serif;
+}
+
+section.consultants div.row2 div.col button {
+    background: #80205a;
+    color: #ffff;
+    padding: 3% 5%;
+    border: none;
+    border-radius: 50px;
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+section.consultants div.row2 div.col button:focus {
+    background: transparent;
+    border: 2px solid #80205a;
+    color: #80205a;
+    transition: 0.3s ease-in-out;
+}
+
+/* styling for challenges */
+
+section.challenges {
+    background: #d8bacc;
+    padding: 5%;
+}
+
+section.challenges div.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.challenges div.row div.col {
+    flex: 3;
+}
+
+section.challenges div.row div.col h1 {
+    font-size: 60px;
+}
+
+section.challenges div.row div.col1 {
+    text-align: right;
+    flex: 1;
+}
+
+section.challenges div.row div.col1 button {
+    background: #80205a;
+    color: #ffff;
+    padding: 5% 5%;
+    border: none;
+    border-radius: 50px;
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+section.challenges div.row div.col1 button:focus {
+    background: transparent;
+    border: 2px solid #80205a;
+    color: #80205a;
+    transition: 0.3s ease-in-out;
+}
+
+section.challenges div.row1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: 5%;
+}
+
+section.challenges div.row1 div.col {
+    margin-right: 1%;
+    flex: 1;
+}
+
+section.challenges div.row1 div.learn-more {
+    margin-top: 5%;
+}
+
+section.challenges div.row1 div.col h3 {
+    font-size: 40px;
+    padding: 5% 0%;
+}
+
+section.challenges div.row1 div.col p {
+    font-family: sans-serif;
+}
+
+section.challenges div.row1 div.col img {
+    width: 320px;
+}
+section.challenges div.row1 div.col a {
+    position: relative;
+    font-size: large;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section.challenges div.slider {
+    align-items: center;
+    align-content: center;
+    margin-top: 3%;
+    margin-left: 46%;
+}
+
+section.challenges div.slider div.row2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.challenges div.slider div.row2 div.col {
+    margin-right: 1%;
+}
+
+section.challenges div.slider div.row2 div.col div.a {
+    border: 2px solid #80205a;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+}
+
+/* styling for patients feedback */
+
+section.patient-comments {
+    padding: 5%;
+    text-align: center;
+}
+
+section.patient-comments h1 {
+    font-size: 65px;
+    margin: 0% 20%;
+}
+
+section.patient-comments div.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0% 10%;
+}
+
+section.patient-comments div.row div.col {
+    flex: 1;
+    border: 2px solid #bdbdbd;
+    margin: 5% 0% 3% 1%;
+    border-radius: 50px;
+    padding: 2% 0%;
+    text-align: left;
+}
+
+section.patient-comments div.row div.col h1 {
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #80205a;
+    margin-left: 5%;
+}
+
+section.patient-comments div.row div.col div.row1 {
+    display: flex;
+    margin-left: 36%;
+}
+
+section.patient-comments div.row div.col div.row div.col1 {
+    gap: 1%;
+}
+
+section.patient-comments div.row div.col p {
+    margin: 3% 10%;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+section.patient-comments button {
+    background: #fff;
+    border: 2px solid #80205a;
+    border-radius: 50px;
+    padding: 1% 1.5%;
+    font-size: large;
+}
+
+section.patient-comments button:hover {
+    background: #80205a;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+section.patient-comments button:focus {
+    background: #80205a;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+/* styling for gift section */
+
+section.gift {
+    background: url(./IMG/Hero\ Section.png);
+    padding: 5% 5% 0% 5%;
+    margin-bottom: -1%;
+}
+
+section.gift div.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.gift div.row div.col {
+    flex: 1;
+}
+
+section.gift div.row div.col1 {
+    padding: 0% 5%;
+}
+
+section.gift div.row div.col1 h2 {
+    font-size: 60px;
+}
+
+section.gift div.row div.col1 p {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 7% 0%;
+}
+
+section.gift div.row div.col1 button {
+    background: #80205a;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    padding: 4% 12%;
+    font-size: large;
+    font-family: sans-serif;
+    margin: 10% 0%;
+}
+
+section.gift div.row div.col1 button:focus {
+    background: transparent;
+    border: 2px solid #80205a;
+    color: #80205a;
+    transition: 0.3s ease-in-out;
+}
+
+/* styling for footer */
+footer {
+    background: #80205a;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    padding: 5%;
+}
+
+footer div.row {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 3%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.274);
+}
+
+footer div.row div.col {
+    flex: 1;
+    text-align: center;
+    margin: 0% 3%;
+}
+
+footer div.row div.col h4 {
+    font-size: 28px;
+    margin-bottom: 5%;
+}
+
+footer div.row div.col div.sub-col {
+    border: 3px dashed #888787;
+    padding: 2%;
+    width: 100%;
+}
+
+footer div.row div.col div.sub-col a {
+    padding: 4% 0%;
+    font-size: larger;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+footer div.row1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3%;
+    font-family: sans-serif;
+    font-size: medium;
+    font-weight: bold;
+}
+
+footer div.row1 div.col2 {
+    flex: 8;
+}
+
+footer div.row1 div.col1{
+    flex: 1;
+}
+
+footer div.row1 div.col1 p {
+    cursor: pointer;
+}

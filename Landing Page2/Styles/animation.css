@@ -1,0 +1,40 @@
+@keyframes slideIn {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.section {
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease-in; /* Smooth appearance */
+}
+
+.section.visible {
+    opacity: 1; /* Visible when class is added */
+    animation: slideIn 1s forwards; /* Trigger animation */
+}
+
+/* fades in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0; /* Initially hidden */
+    transition: opacity 3s ease-in; /* Smooth transition */
+}
+
+.fade-in.visible {
+    opacity: 1; /* Make it visible */
+    animation: fadeIn 3s forwards; /* Apply fade-in animation */
+}
